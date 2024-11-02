@@ -1,0 +1,184 @@
+body {
+    background-color: #FFEBEE; /* Light pink background */
+    color: #C2185B; /* Dark pink text */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.container {
+    max-width: 600px;
+    margin: auto; /* Center the container */
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #FFCCBC; /* Light peach background */
+    border: 5px solid #FF7043; /* Orange border */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px; /* Larger font size */
+}
+
+input {
+    width: 100%;
+    padding: 15px; /* Bigger padding */
+    border: 2px solid #FF7043; /* Orange border */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 20px; /* Larger font size */
+    background-color: #FFAB91; /* Light orange input field */
+    color: #BF360C; /* Dark red text in input */
+}
+
+.results-container {
+    text-align: center;
+}
+
+#countryFlag {
+    border: 2px solid #FF7043; /* Border for the flag */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 100%; /* Responsive flag */
+}
+
+.country-details {
+    margin-top: 20px;
+    background-color: #FFE0B2; /* Light peach background for country details */
+    padding: 15px; /* Increased padding */
+    border-radius: 10px;
+}
+
+.stat {
+    margin: 5px 0;
+    font-size: 22px; /* Increase font size */
+}
+
+.dropdown-menu {
+    position: absolute; /* Position relative to container */
+    z-index: 1000; /* Ensure it appears on top */
+    background: #FFCCBC; /* Dropdown background */
+    border: 2px solid #FF7043; /* Dropdown border */
+    border-radius: 10px;
+    width: 100%; /* Match input width */
+    max-height: 200px; /* Limit height */
+    overflow-y: auto; /* Scroll if needed */
+    display: none; /* Initially hidden */
+}
+
+.dropdown-item {
+    padding: 10px; /* Padding for dropdown items */
+    cursor: pointer; /* Pointer on hover */
+    color: #C2185B; /* Dark pink text */
+    font-size: 20px; /* Larger font size */
+}
+
+.dropdown-item:hover {
+    background-color: #FF7043; /* Highlight on hover */
+    color: white; /* White text on hover */
+}
+
+#map {
+    margin-top: 20px; /* Space above map */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#playButton {
+    padding: 15px 30px;
+    background-color: #FF7043; /* Light orange button */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 10px;
+    cursor: pointer; /* Pointer on hover */
+    font-size: 20px; /* Font size */
+}
+
+#playButton:hover {
+    background-color: #E64A19; /* Darker orange on hover */
+}
+
+.reward {
+    margin-top: 20px; /* Space above reward message */
+    font-size: 28px; /* Larger font for reward */
+    color: #FF5722; /* Bright orange for reward */
+    text-align: center;
+}
+
+
+.natalia-avatar img{
+    border-radius: 50%;
+}
+
+.natalia-avatar {
+    display: flex;
+    align-items: center;
+    position: absolute; /* Position it in the upper left corner */
+    top: 10px;
+    left: 10px;
+}
+
+.natalia-speech {
+    margin-left: 10px; /* Space between avatar and speech */
+    font-size: 15px; /* Adjust speech text size */
+    color: lime; /* Dark pink text for speech */
+    background-color:black; /* Light background for the speech bubble */
+    border: 2px solid #C2185B; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding around the text */
+    position: relative; /* For the speech bubble effect */
+    width: fit-content; /* Adjust width to content */
+    font-family: 'Press Start 2P', cursive; /* Use Game Boy font */
+    
+}
+
+.natalia-speech::after {
+    content: '';
+    position: absolute;
+    left: 10px; /* Position the triangle */
+    top: 50%; /* Position vertically centered */
+    margin-top: -5px; /* Center triangle */
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #f9f9f9 transparent; /* Triangle effect */
+}
+
+
+/* Add this to include the Game Boy font */
+@font-face {
+    font-family: 'GameBoyFont';
+    src: url('https://fonts.cdnfonts.com/s/21019/Gameboy.ttf'); /* Game Boy font URL */
+}
+
+@keyframes pop-in {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+
+.dropdown-menu {
+    border: 1px solid #ddd; /* Add a border */
+    border-radius: 5px; /* Rounded corners */
+    max-height: 150px; /* Limit height */
+    overflow-y: auto; /* Scroll if too many items */
+    background-color: white; /* Background color for dropdown */
+    position: absolute; /* Positioning for dropdown */
+    z-index: 1000; /* Ensure it is on top */
+    width: calc(100% - 20px); /* Adjust for padding */
+}
+
+.dropdown-item {
+    padding: 8px; /* Space for items */
+    cursor: pointer; /* Pointer cursor for items */
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+}
